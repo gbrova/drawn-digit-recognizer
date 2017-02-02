@@ -1,0 +1,16 @@
+.result_row {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-spacing: 0px;
+    padding: 0px;
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*position: fixed;*/
+    /*float: center;*/
+    /*border: 3px solid green;*/
+}
+
+#resultsDiv {
+  height: 50px;
+}
