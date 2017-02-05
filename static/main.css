@@ -14,3 +14,14 @@
 #resultsDiv {
   height: 50px;
 }
+
+.chart rect {
+  fill: #AAAAAA;
+}
+
+.chart text {
+  fill: black;
+  font: 20px sans-serif;
+  text-anchor: end;
+  text-align: center;
+}
