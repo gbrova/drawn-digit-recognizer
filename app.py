@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 from DigitClassifier import DigitClassifier
 
-global digit_classifier
+digit_classifier = DigitClassifier()
 
 @app.route('/')
 def index():
@@ -26,13 +26,9 @@ def parse_coords_from_json(trace_json):
 def get_digit(trace_json):
     (xs, ys) = parse_coords_from_json(trace_json)
 
-    global digit_classifier
     predicted = digit_classifier.classify_proba(xs, ys).tolist()
 
     return predicted
 
 if __name__ == '__main__':
-    global digit_classifier
-    digit_classifier = DigitClassifier()
-
     app.run(port=8080, debug=True)
